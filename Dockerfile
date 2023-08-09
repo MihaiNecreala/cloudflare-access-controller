@@ -18,7 +18,7 @@ COPY internal/ internal/
 
 RUN make build
 
-FROM alpine
+FROM alpine:3.18.3
 
 ENV PATH=/opt/cloudflare-access-controller/bin:$PATH
 
